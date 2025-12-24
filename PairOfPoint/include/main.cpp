@@ -19,6 +19,20 @@ void Print(Point p)
 }
 
 
+int getDist(Point p1, Point p2)
+{
+        int dist = 0;
+
+        int dx = p1.x - p2.x;
+        int dy = p1.y - p2.y;
+
+        dx *= dx;
+        dy *= dy;
+
+        dist = sqrt(dx + dy);
+
+        return dist;
+}
 
 
 int main ()
